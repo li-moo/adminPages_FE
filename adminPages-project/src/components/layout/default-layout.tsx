@@ -44,6 +44,17 @@ const DefaultLayout = ({ Page, ...props }: IDefaultLayoutProps) => {
     setIsShowPopupMenu(val);
   }, []);
 
+  // const setActive = useCallback((val: boolean) => {
+  //   if (val) {
+  //     document.body.style.overflow = "";
+  //   } else {
+  //     document.body.style.overflow = "hidden";
+  //   }
+  //   setIsShowPopupMenu(val);
+  // }, []);
+
+  // 위의 코드 수정
+
   useEffect(() => {
     setActive(false);
   }, [router.asPath, setActive]);
@@ -56,7 +67,7 @@ const DefaultLayout = ({ Page, ...props }: IDefaultLayoutProps) => {
       <div className="z-40 flex items-center justify-between px-5 border-b h-14 sm:hidden">
         <div className="flex items-center">
           <div className="flex items-center justify-center w-8 h-8 text-white rounded-lg bg-turquoise">P</div>
-          <div className="ml-3 text-lg text-black">Purple Admin UI</div>
+          <div className="ml-3 text-lg text-black">Admin Pages KDT</div>
         </div>
         <div>
           <MenuBtn isActive={isShowPopupMenu} setActive={setActive} />

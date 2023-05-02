@@ -30,6 +30,14 @@ const Profile = () => {
       ),
       key: "1",
     },
+    {
+      label: (
+        <Link href="/sample/staff/list" className="min-w-[8rem] link-with-icon">
+          <User width={16} height={16} />직원 관리
+        </Link>
+      ),
+      key: "2",
+    },
   ];
 
   return (
