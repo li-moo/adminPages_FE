@@ -152,7 +152,7 @@ const ProductList = () => {
             엑셀 다운로드
           </Button>
           <Button type="primary" onClick={() => router.push("/sample/product/new")}>
-            -
+            상품등록
           </Button>
         </div>
       </DefaultTableBtn>
