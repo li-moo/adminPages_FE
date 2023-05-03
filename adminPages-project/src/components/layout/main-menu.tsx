@@ -1,5 +1,5 @@
 import { Divider } from "antd";
-import { Home, Monitor, Package2, Pencil, Files } from "lucide-react";
+import { Home, Monitor, Package2, Pencil, Files, CalendarCheck } from "lucide-react";
 import React from "react";
 import Menu, { IMenu } from "./nav";
 
@@ -50,6 +50,20 @@ const mainMenuData: IMenu[] = [
         name: "매출 목록",
         link: {
           path: "/sample/sales/list",
+        },
+      },
+    ],
+  },
+  {
+    id: "calendar",
+    name: "캘린더",
+    icon: <CalendarCheck className="w-5 h-5" />,
+    submenu: [
+      {
+        id: "calendarList",
+        name: "일정 목록",
+        link: {
+          path: "/sample/calendar/list",
         },
       },
     ],
