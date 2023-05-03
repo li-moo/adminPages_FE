@@ -127,53 +127,39 @@
       "pwd": "1234"
     },
     {
-      "store_id": "",
-      "name": "",
-      "login_id": "",
-      "pwd": "",
+      "store_id": "1",
+      "name": "모모",
+      "login_id": "kang",
+      "pwd": "1111",
       "id": 3
     },
     {
-      "store_id": "",
-      "name": "",
-      "login_id": "",
-      "pwd": "",
+      "store_id": "3",
+      "name": "레몬",
+      "login_id": "lemon",
+      "pwd": "1111222",
       "id": 4
     },
     {
-      "store_id": "1",
-      "name": "김로",
-      "login_id": "",
-      "pwd": "",
+      "store_id": "3",
+      "name": "레몬",
+      "login_id": "lemon",
+      "pwd": "1111222",
       "id": 5
     },
     {
-      "store_id": "1",
-      "name": "김로미",
-      "login_id": "krm",
-      "pwd": "1111",
+      "store_id": "3",
+      "name": "윤민지",
+      "login_id": "123",
+      "pwd": "123",
       "id": 6
     },
     {
-      "store_id": "1",
-      "name": "김로미",
-      "login_id": "krm",
-      "pwd": "1111",
+      "store_id": "3",
+      "name": "윤민지",
+      "login_id": "123",
+      "pwd": "123",
       "id": 7
-    },
-    {
-      "store_id": "1",
-      "name": "김로미",
-      "login_id": "krm",
-      "pwd": "1111",
-      "id": 8
-    },
-    {
-      "store_id": "2",
-      "name": "이세림",
-      "login_id": "lslrim",
-      "pwd": "1111",
-      "id": 9
     }
   ],
   "carts": [

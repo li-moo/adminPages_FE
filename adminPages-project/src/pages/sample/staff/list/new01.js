@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function StaffForm() {
 //   const [login, setLogin] = useState([]);
@@ -21,7 +22,7 @@ export default function StaffForm() {
   // "http://localhost:3001/staff"
   // http://localhost:8080/staff/add
   const createStaffs = () => {
-    return axios.post("http://localhost:8080/staff/add", {
+    return axios.post("http://localhost:3001/staff", {
     store_id: inputs.store_id,   
     name: inputs.name,
     login_id: inputs.login_id,
@@ -47,7 +48,7 @@ export default function StaffForm() {
     // console.log(inputs.id);
   };
   return (
-    <>
+    <div className="h-screen flex items-center flex justify-center"> 
       <form
         onSubmit={handleSubmit}
         onChange={handleOnChange}
@@ -63,13 +64,17 @@ export default function StaffForm() {
         <input className="border" type="text" name="login_id" />
 
         <label>password</label>
-        <input className="border" type="text" name="pwd" />
+        <input className="border" type="password" name="pwd" />
 
 
         <button className="bg-red-100 p-3 mt-4" onClick={createStaffs}>
           Submit
         </button>
+      <Link href="/sample/staff/list/" className="min-w-[8rem] link-with-icon">
+          <button> 직원 목록 페이지로 </button>
+      </Link>
       </form>
-    </>
+
+    </div>
   );
 }
