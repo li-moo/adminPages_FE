@@ -1,8 +1,7 @@
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import { useState } from 'react';
 
 interface Staff {
-  map(arg0: (user: any) => JSX.Element): import("react").ReactNode;
   id: number;
   name: string;
   login_id: string;
@@ -11,13 +10,13 @@ interface Staff {
 }
 
 const StaffList = () => {
-  const [userData, setUserData] = useState<Staff | null>(null);
+  const [userData, setUserData] = useState<Staff[]>([]);
+  const url_be = "http://localhost:8080/api/v1/staff/list"
 
-  const fetchData = async (params: any) => {
+  const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/staff', { params });
+      const response: AxiosResponse<Staff[]> = await axios.get<Staff[]>(url_be);
       setUserData(response.data);
-      // setUserData(response.data[0]);
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -25,10 +24,9 @@ const StaffList = () => {
   };
 
   return (
-
     <div>
-      <button onClick={() => fetchData({})}>데이터 가져오기</button>
-      {userData && userData.map((user) => (
+      <button onClick={() => fetchData()}>데이터 가져오기</button>
+      {userData.map((user) => (
         <div key={user.id}>
           <div>ID: {user.id}</div>
           <div>이름: {user.name}</div>
