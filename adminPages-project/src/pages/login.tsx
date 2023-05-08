@@ -17,13 +17,13 @@ const LoginPage = () => {
       </div>
 
       {/* <div className="w-full lg:w-1/2"> */}
-      <div className="divdiv"
->
+      <div className="divdiv">
       <style jsx>{`
       .divdiv {
         margin-top: 170px;
       }
     `}</style>
+    
         <div className="relative flex items-center justify-center h-full">
           {/* <section className="w-full px-5 pb-10 text-gray-800 sm:w-4/6 md:w-3/6 lg:w-4/6 xl:w-3/6 sm:px-0"> */}
           <section className="w-full px-5 pb-10 text-gray-800 sm:w-4/6 md:w-3/6 lg:w-4/6 xl:w-3/6 sm:px-0">
